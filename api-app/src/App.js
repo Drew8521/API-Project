@@ -33,16 +33,17 @@ function App() {
   return (
     //loadQuestion
     <BrowserRouter>
-       <div className="App">
-         <Navbar />
-         <Route path='/home' component={Home} />
-         <Route path='/characters' component={Characters} />
-         {chars.map(char => (
-          <Characters 
-            name={char.name}
-            description={char.description}
-          />
-        ))};
+      <div className="App">
+        <Navbar />
+        <Route path='/home' component={Home} />
+        <Route path='/characters' component={Characters}> 
+          {chars.map(char => (
+            <Characters 
+              name={char.name}
+              description={char.description}
+            />
+          ))}
+        </Route>
        </div>
     </BrowserRouter>
   )
