@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import loadQuestion from './questionLoader';
+//import loadQuestion from './questionLoader';
 import Navbar from './components/Navbar'
 import { BrowserRouter, Route } from 'react-router-dom'
 import Home from './components/Home'
@@ -8,7 +8,7 @@ import Characters from './components/Characters'
 
 function App() {
   return (
-    loadQuestion
+    //loadQuestion
     <BrowserRouter>
        <div className="App">
          <Navbar />
