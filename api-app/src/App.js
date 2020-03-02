@@ -18,19 +18,23 @@ function App() {
   const [query, setQuery] = useState('Ancient One');
   const [listNames, setListNames] = useState({
     charNames: [
-      'Squirrel Girl', 
       'Ancient One', 
-      'Grandmaster',
-      'Silver Surfer',
-      'Cannonball',
-      'Machine Man',
-      'Silver Surfer',
       'Apocalypse',
+      'Blade',
+      'Bullseye',
+      'Domino',
+      'Echo',
       'Elektra',
       'Firelord',
-      'Blade',
-      'Echo',
-      'Domino'
+      'Grandmaster',
+      'Kitty Pryde',
+      'Machine Man',
+      'Morph', 
+      'Nebula',
+      'Silver Surfer',
+      'Squirrel Girl',
+      'Uatu The Watcher',
+      'Viper'
     ]
   });
 
