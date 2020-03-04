@@ -1,12 +1,13 @@
 import React from 'react'
+//import { render } from '@testing-library/react'
 
-const Characters = () => {
-	return (
-		<div className="container">
-			<h4 className="center"> Characters </h4>
-			<p> More characters to Explore: </p>
-		</div>
-		)
+const Characters = (props) => {
+    return (
+        <div className="container">
+            <p>{props.name}</p>
+            <p>{props.description}</p>
+        </div>
+    );       
 }
 
 export default Characters
