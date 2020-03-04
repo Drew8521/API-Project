@@ -23,9 +23,9 @@ function Quiz(props) {
   return (
     <div className="quiz">
       <Question content={props.question} />
-      <ul className="answerOptions">
+      <div className="answerOptions">
         {props.answerOptions.map(renderAnswerOptions)}
-      </ul>
+      </div>
     </div>
   );
 }
