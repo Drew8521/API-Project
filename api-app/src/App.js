@@ -10,7 +10,7 @@ import Question from './components/Question'
 import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result'
-// import md5 from "md5";
+//import md5 from "md5";
 
 class App extends Component {
 

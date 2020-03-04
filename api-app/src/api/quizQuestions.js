@@ -1,109 +1,88 @@
 var quizQuestions = [
   {
-      question: "How would you describe yourself",
+      question: "What would your catchphrase be?",
       answers: [
           {
-              type: "Superman",
-              content: "Strong"
+              type: "Hero",
+              content: "Justice shall previal!"
           },
           {
-              type: "Spiderman",
-              content: "Smart"
+              type: "Villain",
+              content: "Everything burns!"
           },
           {
-              type: "Green Shadown",
-              content: "Villain"
+              type: "Antihero",
+              content: "I don't hate everything about the world, just every show they've put on after 'Friends'"
           },
           {
-              type: "Wonder Woman",
-              content: "Hero"
+              type: "Neutral",
+              content: "I wouldn't have a catchphrase"
           }
       ]
   },
   {
-      question: "Prefered weapon?",
+      question: "How do you stop the aliens from taking over earth?",
       answers: [
           {
-              type: "Superman",
-              content: "Fists"
+              type: "Strong",
+              content: "My fists of course... (or maybe just use my insane powers)"
           },
           {
-              type: "Spiderman",
-              content: "Webs"
+              type: "Funny",
+              content: "Are they taking over New York? Again? What's new?"
           },
           {
-              type: "Green Shadow",
-              content: "Green spray"
+              type: "Smart",
+              content: "Just invent time travel and end them before they even started."
           },
           {
-              type: "Wonder Woman",
-              content: "Lasso of Truth"
+              type: "Serious",
+              content: "Assemble a team of very strong heroes! Duh!"
           }
       ]
   },
   {
-      question: "Catchphrase?",
+      question: "What Hogwarts House are you?",
       answers: [
           {
-              type: "Superman",
-              content: "Justice waits for no one"
+              type: "Gryffindor",
+              content: "Gryffindor"
           },
           {
-              type: "Spiderman",
-              content: "Sling those webs dawg"
+              type: "Slytherin",
+              content: "Slytherin"
           },
           {
-              type: "Green Shadow",
-              content: "I will own all the real estate"
+              type: "Hufflepuff",
+              content: "Hufflepuff"
           },
           {
-              type: "Wonder Woman",
-              content: "I am super strong and I will destroy you"
+              type: "Ravenclaw",
+              content: "Ravenclaw"
           }
       ]
   },
   {
-      question: "Backstory?",
+      question: "Who would you add to your team?",
       answers: [
           {
-              type: "Superman",
-              content: "Destroyed planet"
+              type: "Skilled",
+              content: "Gamora"
           },
           {
-              type: "Spiderman",
-              content: "Dead uncle"
+              type: "Mutated",
+              content: "Wolverine"
           },
           {
-              type: "Green Shadow",
-              content: "Failed magician"
+              type: "Otherworldly",
+              content: "Green Lantern"
           },
           {
-              type: "Wonder Woman",
-              content: "Grew up on an island"
+              type: "Other",
+              content: "Other"
           }
       ]
   },
-  {
-      question: "Destiny?",
-      answers: [
-          {
-              type: "Superman",
-              content: "Turning evil"
-          },
-          {
-              type: "Spiderman",
-              content: "Turning good"
-          },
-          {
-              type: "Green Shadow",
-              content: "Fighting the good fight"
-          },
-          {
-              type: "Wonder Woman",
-              content: "Fighting the not good fight"
-          }
-      ]
-  }
 ];
 
 export default quizQuestions;
