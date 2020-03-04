@@ -4,7 +4,7 @@ import React from 'react';
 const loadQuestion = (props) => {
   return (
       <div className="">
-          <h1>{props.question}</p>
+          <p>{props.question}</p>
           <p>{props.answerOne}</p>
           <p>{props.answerTwo}</p>
           <p>{props.questionThree}</p>
