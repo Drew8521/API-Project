@@ -9,10 +9,6 @@
     "md5": "^2.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-<<<<<<< HEAD
-=======
-    "react-router": "^5.1.2",
->>>>>>> 6969941ae0ebeb21b460ba8fcfd037415cbb87c1
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.1"
   },
