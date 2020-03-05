@@ -1,0 +1,35 @@
+button{
+    background-color: red;
+    color: white;
+    font-family: 'BebasNeueRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    padding-top: 0px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+  }
+  p{
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  h4{
+    font-size: 21px;
+  }
+
+  button{
+    transition-duration: 0.4s;
+  }
+  
+  button:hover{
+    background-color: #990000; /* Green */
+    color: white;
+  }
+
+  
+  h3{
+    font-size: 32px;
+  }
+  

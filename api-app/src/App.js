@@ -10,7 +10,8 @@ import Question from './components/Question'
 import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result'
- import QuizPage from './QuizPage';
+import QuizPage from './QuizPage';
+import API from './components/API';
 //import md5 from "md5";
 
 class App extends Component {
@@ -20,7 +21,7 @@ class App extends Component {
           <div className="App">
             <Navbar />
             <Route path='/home' component={Home} />
-            <Route path='/characters' component={Characters} />
+            <Route path='/characters' component={Characters, API} />
               <Route path='/QuizPage' component={QuizPage} />
           </div>
        </BrowserRouter>
