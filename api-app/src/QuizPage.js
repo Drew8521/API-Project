@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+//import './App.css';
 import loadQuestion from './questionLoader';
 import Navbar from './components/Navbar'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Home from './components/Home'
 import Characters from './components/Characters'
 import { useState, useEffect } from "react";
@@ -10,23 +10,10 @@ import Question from './components/Question'
 import quizQuestions from './api/quizQuestions';
 import Quiz from './components/Quiz';
 import Result from './components/Result'
- import QuizPage from './QuizPage';
 //import md5 from "md5";
 
-class App extends Component {
-  render() {
-     return (
-       <BrowserRouter>
-          <div className="App">
-            <Navbar />
-            <Route path='/home' component={Home} />
-            <Route path='/characters' component={Characters} />
-              <Route path='/QuizPage' component={QuizPage} />
-          </div>
-       </BrowserRouter>
-    );
-  }
-/*
+class QuizPage extends Component {
+
   constructor(props) {
   super(props);
 
@@ -39,7 +26,6 @@ class App extends Component {
     answersCount: {},
     result: ''
   };
-
 
 this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
 }
@@ -67,8 +53,6 @@ shuffleArray(array) {
 
   return array;
 };
-
-*/
 
   // const TS = "Date.now()";
   // const PUBLIC_KEY = "9ac99174c6637a3dd38851c3d6b0d5b1";
@@ -138,7 +122,6 @@ shuffleArray(array) {
   //   </BrowserRouter>
   // )
 
-/*
   getResults() {
     const answersCount = this.state.answersCount;
     const answersCountKeys = Object.keys(answersCount);
@@ -209,7 +192,6 @@ shuffleArray(array) {
 
   render() {
     return (
-
     // <div className="App">
     //   <div className="App-header">
     //     <h2>React Quiz</h2>
@@ -219,6 +201,4 @@ shuffleArray(array) {
   }
 }
 
-*/
-}
-export default App;
+export default QuizPage;
