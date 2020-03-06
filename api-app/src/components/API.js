@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { useState, useEffect } from "react";
 import Characters from './Characters';
 import { render } from 'react-dom';
+import './Characters.css';
 
 const API = () => {
     const TS = "Date.now()";
@@ -12,6 +13,7 @@ const API = () => {
     const HASH = md5(TS + PRIVATE_KEY + PUBLIC_KEY);
     const [charactersState, setCharactersState] = useState([]);
     const [comicItems, setComicItems] = useState([]);
+    const [thumbnailItems, setThumbnailItems] = useState({});
     const [query, setQuery] = useState('Ancient One');
     const [listNames, setListNames] = useState({
         charNames: [
@@ -47,6 +49,8 @@ const API = () => {
         const data = await response.json();
         setCharactersState(data.data.results[0]);
         setComicItems(data.data.results[0].comics.items);
+        setThumbnailItems(data.data.results[0].thumbnail);
+        console.log(setThumbnailItems(data.data.results[0].thumbnail));
     }
     
     const updateSetQueryState = e => {
@@ -59,8 +63,8 @@ const API = () => {
             <h3 className="center"> Characters</h3>
             <h4 className="center">Click on a character button to explore!</h4>
                 {listNames.charNames.map(charName => (
-                    <button onClick={updateSetQueryState}>
-                        <p>{charName}</p>
+                    <button className="charBtn" onClick={updateSetQueryState}>
+                        <p className="charBtnText">{charName}</p>
                     </button>
                  ))}
           <Characters
@@ -69,6 +73,7 @@ const API = () => {
                 comics={comicItems.map((comicItem, index) => (
                     <li key={index}>{comicItem.name}</li>
                  ))}
+                image={`${thumbnailItems.path}.${thumbnailItems.extension}`}
           />
 
         </div>
